@@ -14,13 +14,13 @@ lowerDiv.classList.add('animate__slow');
 setTimeout(function(){
     lowerDiv.classList.remove('animate__fadeInUp');
     lowerDiv.classList.remove('animate__slow');
-},2000);
+},2200);
 rulesButton.classList.add('animate__fadeInRight');
 rulesButton.classList.add('animate__slow');
 setTimeout(function(){
     rulesButton.classList.remove('animate__fadeInRight');
     rulesButton.classList.remove('animate__slow');
-},2000);
+},2200);
 let choiceNumber;
 const stats=document.getElementById('stats');
 const score = document.getElementById('score-lower');
