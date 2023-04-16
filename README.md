@@ -1,5 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
+working link for the site-https://huhrsh.github.io/Rock-Paper-Scissor/
+
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
