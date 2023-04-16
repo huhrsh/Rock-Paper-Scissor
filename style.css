@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed';
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-size: cover;
+}
+
+.main-div{
+    /* border: 2px solid white; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+    width: 50vw;
+    margin-top: 5vh;
+    /* height: 90vh; */
+}
+
+.upper-div{
+    width: 40vw;
+    height: 17.5vh;
+    border: 3px solid hsl(228, 73%, 80%);
+    border-radius: 1rem;  
+    /* margin-top: 5%;  */
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vh;
+    margin-bottom: 20px;
+}
+
+.score-div{
+    display: flex;
+    width: 8vw;
+    height: 95%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.r-p-s{
+    color: white;
+    font-size: 2.6rem;
+    line-height: 1.6rem;
+}
+
+.score-upper{
+    color: hsl(229, 64%, 46%);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.score-lower{
+    font-size: 3rem;
+    color: hsl(217, 16%, 45%);
+}
+
+
+/* css for lover div  */
+.lower-div{
+    /* background-color: blue; */
+    /* background-image: url('./images/bg-triangle.svg'); */
+    background-size:cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* display: none; */
+    margin-bottom: 150px;
+
+    /* border: 10px solid black; */
+    /* background-color: rgba(0, 0, 255, 0.486); */
+}
+/* css for buttons  */
+.button{
+    margin: 2vw;
+    height: 13vw;
+    background-color: red;
+    width: 13vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px solid rgba(0, 0, 0, 0.29);
+}
+/* css properties for inner buttons  */
+.inner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:10vw ;
+    width:10vw ;
+    border-radius: 50%;
+    border-top: 7px solid rgba(0, 0, 0, 0.29);
+    background-color: white;   
+}
+/* css for icon  */
+.icon{
+    transform: scale(1.2);
+}
+.triangle{
+    margin-top:15vh;
+    /* margin-left: -3%; */
+    height: 20vw;
+    width: 23vw;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    background:url('./images/bg-triangle.svg');
+    background-size: cover;
+}
+#paper{
+    background-image: linear-gradient(to top,hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+#scissor{
+    background-image:linear-gradient(to top,hsl(39, 89%, 49%), hsl(40, 84%, 53%)) ;
+}
+#rock{
+    background-image: linear-gradient(to top,hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+
+
+
+.rules-button button{ 
+    height:5vh ;
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    /* margin-left: 90%; */
+    width:8vw ;
+    border-radius: 0.5rem;
+    background-color: inherit;
+    color: white;
+    font-size: 1.3rem; 
+    border: 1.7px solid white;
+    font-family: 'Barlow Semi Condensed';
+}
+.rules-button button:hover{ 
+    background: white;
+    color: hsl(229, 25%, 31%);
+    font-family: 'Barlow Semi Condensed';
+    transition: 0.3s ease-in-out;
+}
+
+/* css for outside rule  */
+#outside-rule{
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.rules{
+    /* top: 20vh;
+    left: 35vw;
+    position:absolute; */
+    z-index: 1;
+    height: 65vh;
+    width: 30vw;
+    border-radius: 1rem;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container{
+    height: 45vh;
+    width: 25vw;
+    background-image: url("./images/image-rules.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.upper-rule-div{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:22vw;
+    height: 5vh;
+    margin: 2vh;
+    font-size: 2.3rem;
+    font-weight: 900 ;
+    color: rgb(76, 75, 75);
+}
+
+
+.button2{
+    margin: 2vw;
+    height: 18.5vw;
+    width: 18.5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px solid rgba(0, 0, 0, 0.29);
+}
+#stats-heading{
+    text-align: center;
+}
+
+.inner-button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:14vw ;
+    width:14vw ;
+    border-radius: 50%;
+    border-top: 7px solid rgba(0, 0, 0, 0.29);
+    background-color: white;   
+}
+/* css for icon  */
+.icon2{
+    transform: scale(1.8);
+}
+
+.lower-div2{
+    padding-top: 20px;
+    /* background-size:cover; */
+    position: absolute;
+    top: 30vh;
+    left: 10%;
+    /* width: 50vw; */
+    width: 80vw;
+    display: flex;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.stats{
+    opacity: 0;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#computer-choice{
+    background-image: none;
+    border:none;
+}
+#computer-choice div{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+#play-again{
+    font-family: 'Barlow Semi Condensed';
+    width: 14vw;
+    height: 5vh;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+#play-again:hover{
+    background: hsl(229, 25%, 31%);
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    border: 1px solid white;
+}
+/* .animate__slow{
+    --animation-duration:1s;
+} */
+
+.player-stats{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-stats h1{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.animate__slow{
+    animation-duration: 2s;
+}
+
+@media screen and (max-width:600px) {
+    .main-div{
+        width: 90vw;
+    }
+    .upper-div{
+        height: 15vh;
+        width: 90vw;
+    }
+    .score-div{
+        width: 30vw;
+    }
+    /* .lower-div{
+        background-color: red;
+    
+    } */
+    .button{
+        width: 40vw;
+        height: 40vw;
+    }
+    .inner-button{
+        width: 27vw;
+        height: 27vw;
+    }
+    .triangle{
+        /* background: red; */
+        margin-top: 11vh;
+        width: 52vw;
+        height: 46vw;
+    }
+    .rules-button button{
+        width: 20vw;
+    }
+    .rules{
+        height: 55vh;
+        width: 80vw;
+        /* background-color: red; */
+    }
+    .img-container{
+        width: 70vw;
+        height: 70vw;
+        /* background: red; */
+    }
+    .upper-rule-div{
+        width: 85%;
+    }
+    .lower-div2{
+        margin-top: -30px;
+        width: 90vw;
+        justify-content: center;
+        left: 5vw;
+        /* background-color: red; */
+    }
+    .lower-div{
+        margin-top: 30px;
+    }
+    .button2{
+        margin: 0;
+        /* background: blue; */
+        width: 42vw;
+        height: 42vw;
+    }
+    .inner-button2{
+        height: 28vw;
+        width: 28vw;
+    }
+    .inner-button2 img{
+        height: 11vw;
+    }
+    .player-stats div h1{
+        margin-bottom: 20px;
+        font-size:larger;
+    }
+    .stats{
+        top: 15vh;
+        position: absolute;
+    }
+    #play-again{
+        font-size: 1.5rem;
+        width: 40vw;
+    }
+    
+}

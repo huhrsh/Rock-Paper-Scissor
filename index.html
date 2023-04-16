@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Rock, Paper, Scissors</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- main div  -->
+  <div class="main-div">
+    <!-- upper-div -->
+      <div class="upper-div animate__animated animate__fadeInDown animate__slow">
+        <div class="r-p-s">  
+          <h5>ROCK</h5>
+          <h5>PAPER</h5>
+          <h5>SCISSORS</h5>
+        </div>
+        
+        <div>
+          <div class="score-div">
+              <div  class="score-upper">
+                  SCORE
+              </div>
+              <div id="score-lower" class="score-lower animate__animated">
+                  0
+              </div>
+
+          </div>
+        </div>  
+
+      </div>
+      <!-- lower div -->
+      <div class="lower-div animate__animated" id="lower-div">
+        <!-- buttons in the div  -->
+        <div class="button animate__animated animate__fast animate__infinite" id="paper">
+          <div class="inner-button animate__animated  "data-value='0'>
+              <img class="icon" src="./images/icon-paper.svg" alt="paper">
+          </div>
+        </div>
+
+        <div class="button animate__animated animate__fast animate__infinite" id="scissor">
+          <div class="inner-button animate__animated  " data-value="1">
+              <img class="icon" src="./images/icon-scissors.svg" alt="paper">
+          </div>
+        </div>
+
+        <div class="button animate__animated animate__fast animate__infinite" id="rock">
+          <div class="inner-button animate__animated  "  data-value="2">
+              <img class="icon" src="./images/icon-rock.svg" alt="paper">
+          </div>
+        </div>
+
+        <div class="triangle" ></div>
+
+      </div>
+
+
+
+  <!-- rules div -->
+  <div  class="rules-button">
+    <button id="rules-button"  class="animate__animated animate__infinite">RULES</button>
+  </div>
+  
+<div class="animate__animated" id="outside-rule">
+  <div class="rules">
+    <div class="upper-rule-div">
+      <div>RULES</div>
+      <div id="close-btn"><img id="close-button" class="animate__animated animate__slow" src="./images/icon-close.svg"></div>
+    </div>
+    <div class="img-container"></div>
+  </div>  
+  </div>
+</div>
+
+
+
+<div class="lower-div2 animate__animated" id="lower-div2">
+  <div class="player-stats">
+    <div><h1>YOU PICKED</h1></div>
+    <div class="button2 animate__animated animate__fast animate__infinite" id="your-choice">
+      <div class="inner-button2 animate__animated " id="your-choice-inner">
+          <img class="icon2" src="./images/icon-paper.svg" alt="paper">
+      </div>
+    </div>
+  </div>  
+
+  <div class="stats animate__animated" id="stats">
+    <div><h1 id="stats-heading">YOU WIN</h1></div>
+    <div><button id="play-again">PLAY AGAIN</button></div>
+  </div>
+  
+  <div class="player-stats">
+    <div><h1>COMPUTER PICKED</h1></div>
+    <div class="button2 animate__animated" id="computer-choice">
+      <div class="inner-button2 animate__animated " id="computer-choice-inner">
+          <!-- <img class="icon2" src="./images/icon-scissors.svg" alt="paper"> -->
+      </div>
+    </div>
+    </div>
+  </div>  
+
+</div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
